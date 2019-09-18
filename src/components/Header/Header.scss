@@ -1,0 +1,39 @@
+.Header {
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  padding: 0 20px;
+  background: #fff;
+
+  .Title {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    z-index: 1;
+    background: #fff;
+  }
+
+  .Nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background: #fff;
+
+    .Button {
+      margin: 0 0 0 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.NavFlyout {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 16px 20px;
+
+  &-content {
+    position: relative;
+    flex-wrap: nowrap;
+    display: flex;
+    background: #ffffff;
+  }
+
+  &-widget {
+    align-items: center;
+    flex-basis: 33%;
+    justify-content: center;
+    display: flex;
+    width: 33%;
+    color: rgba(0, 0, 0, 0.1);
+    background: #f7f7fb;
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: 25%;
+      width: 25%;
+    }
+  }
+
+  &-groups {
+    flex-basis: 67%;
+    flex-wrap: wrap;
+    display: flex;
+    width: 67%;
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: 75%;
+      width: 75%;
+    }
+  }
+
+  &-group {
+    flex-basis: 50%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 25px;
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: 33.33%;
+      width: 33.33%;
+    }
+  }
+
+  &-desc {
+    padding: 0 20px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #636F99;
+  }
+
+  &-items {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-item {
+    width: 100%;
+    margin: 0;
+    border-radius: 52px;
+
+    &:hover {
+      background: #F7F7FB;
+    }
+  }
+  
+  &-link {
+    display: block;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #0A0A82;
+    text-decoration: none;
+  }
+
+  .Button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin: 0;
+  }
+}

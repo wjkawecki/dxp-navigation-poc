@@ -1,0 +1,17 @@
+.MobileHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 20px;
+  background: #fff;
+
+  &-buttons {
+    .Button {
+      margin: 0 0 0 16px;
+    }
+  }
+}
